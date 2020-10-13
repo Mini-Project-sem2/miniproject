@@ -1,4 +1,4 @@
 # miniproject
-mini project SEM2
+mini proj-
 Digital cash counter 
 
