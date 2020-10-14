@@ -1,6 +1,6 @@
 package OOP;
 
-class change extends CashCounter{
+class change {
  
   public void Change(int amount,int[] quantity){
     
