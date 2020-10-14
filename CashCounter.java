@@ -4,21 +4,25 @@ import java.util.Scanner;
 
 public class CashCounter  {
   
+  //fill notes or coin in cash counter
   public int OneCount=0,FiveCount=0,TenCount=0,FiftyCount=0,HundredCount=0,TwoHundredCount=0,FiveHundredCount=0,TwoHousandCount=0;
 
   public int[] fillCounter(){
+    
     Scanner sc=new Scanner(System.in);
+    
     System.out.println("enter-1 to stop");
     System.out.println("Enter the no of notes to be filled");
+    
     int option=0;
     while (option!=-1) {
       System.out.println("\nEnter amount");
       option=sc.nextInt(); 
-      if(option==-1) break;
+      if(option==-1) break;//to get out of loop
       switch (option) {
-        case 2000:
-          System.out.println("Enter Quantity:");
-          TwoHousandCount +=sc.nextInt();
+        case 2000: //value of currency
+          System.out.println("Enter Quantity:"); //no of notes to be added
+          TwoHousandCount +=sc.nextInt();//total note availabe in cash counter
           break;
         case 500:
           System.out.println("Enter Quantity:");
@@ -55,6 +59,8 @@ public class CashCounter  {
     }
 
     sc.close();
+    
+    //array of available quantity of currenct to pass value
     int a[]={TwoHousandCount,FiveHundredCount,TwoHundredCount,HundredCount,FiftyCount,TenCount,FiveCount,OneCount};
 
     return a;
