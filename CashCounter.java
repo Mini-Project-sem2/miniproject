@@ -2,7 +2,7 @@ package OOP;
 
 import java.util.Scanner;
 
-public class CashCounter extends mainclass {
+public class CashCounter  {
   
   public int OneCount=0,FiveCount=0,TenCount=0,FiftyCount=0,HundredCount=0,TwoHundredCount=0,FiveHundredCount=0,TwoHousandCount=0;
 
